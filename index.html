@@ -93,7 +93,7 @@ a{color:inherit;text-decoration:none}
   filter:blur(30px);animation:aurora 14s ease-in-out infinite alternate;mix-blend-mode:screen}
 @keyframes aurora{0%{transform:translate(-6%,-4%) rotate(0deg) scale(1)}100%{transform:translate(6%,5%) rotate(12deg) scale(1.12)}}
 .hero > *{position:relative;z-index:1}
-.hero .live{display:inline-flex;align-items:center;gap:10px;margin-top:18px;padding:9px 14px 9px 11px;border-radius:999px;
+.hero .live{display:flex;max-width:430px;align-items:center;gap:10px;margin-top:18px;padding:9px 14px 9px 11px;border-radius:999px;
   background:rgba(255,255,255,.08);border:1px solid rgba(143,176,255,.35);font-size:13px;color:#DCE6FF;backdrop-filter:blur(6px)}
 .hero .live .dot{width:8px;height:8px;border-radius:50%;background:#5FD38D;box-shadow:0 0 0 0 rgba(95,211,141,.6);animation:ping 1.6s ease-out infinite}
 @keyframes ping{0%{box-shadow:0 0 0 0 rgba(95,211,141,.6)}100%{box-shadow:0 0 0 9px rgba(95,211,141,0)}}
@@ -115,7 +115,7 @@ a{color:inherit;text-decoration:none}
 .hero .btn-w{background:#fff;color:#0F1B33}
 .hero .btn-b{background:linear-gradient(135deg,#3B6CF0,#2447B8);color:#fff}
 .hero .btn-b:hover{background:linear-gradient(135deg,#4A7BFF,#2B52CC)}
-.hero-name{position:absolute;right:18px;bottom:18px;background:rgba(9,17,36,.72);backdrop-filter:blur(6px);
+.hero-name{position:static;display:inline-block;margin-top:14px;background:rgba(9,17,36,.72);backdrop-filter:blur(6px);
   padding:8px 12px;border-radius:12px;font-size:12px;line-height:1.35;color:#CDD8F3}
 .hero-name b{display:block;font-size:14px;color:#fff}
 @media(max-width:560px){
@@ -127,7 +127,9 @@ a{color:inherit;text-decoration:none}
   .hero .live .roll{min-width:200px}
   .hero > div{max-width:100%}
   .hero .cta .btn{flex:1}
-  .hero-name{top:16px;bottom:auto;right:16px}
+  .hero-name{margin-top:12px}
+  .hero .live{max-width:100%;font-size:12.5px}
+  .hero .live .roll{min-width:0;flex:1}
 }
 
 /* stats */
@@ -265,8 +267,8 @@ footer{max-width:740px;margin:0 auto;padding:0 18px 20px;font-size:11.5px;color:
           <span>같은 보장, 총 납입 차이 <b>775만원</b></span>
         </span>
       </div>
+      <div class="hero-name"><b>이엄지 팀장</b>프라임에셋 316본부 · @316_eomji_world</div>
     </div>
-    <div class="hero-name"><b>이엄지 팀장</b>프라임에셋 316본부 · @316_eomji_world</div>
   </section>
 
   <section class="card stats rv">
